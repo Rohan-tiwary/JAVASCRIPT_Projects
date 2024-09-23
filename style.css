@@ -1,0 +1,16 @@
+h1{
+    font-size: 100px;
+    background: yellow;
+}
+#bulb{
+    height: 300px;
+    width:300px;
+    border-radius: 50%;
+    background-color: rgb(186, 186, 186);
+    border: solid rgb(255, 0, 0) 8px;
+}
+button{
+    padding:10px 30px;
+    margin:90px;
+    
+}
