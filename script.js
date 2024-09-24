@@ -1,13 +1,17 @@
-var bulb=document.querySelector("#bulb");
-var btn=document.querySelector("button");
-var flag=0;
-btn.addEventListener("click",function(){
-    if(flag==0){
-        bulb.style.backgroundColor="red";
-        flag=1;
-    }
-    else{
-        bulb.style.backgroundColor="transparent";
-        flag=0;
+var istatus=document.querySelector("h5");
+var addFriend=document.querySelector("#add");
+var check=0;
+
+addFriend.addEventListener("click",function(){
+    if(check==0){
+        istatus.innerHTML="Friends";
+        istatus.style.color="green";
+        addFriend.innerHTML="Remove"
+        check=1;
+    }else{
+       istatus.innerHTML="Stranger";
+       istatus.style.color="red";
+       addFriend.innerHTML="ADD Friend";
+       check=0;
     }
 })
