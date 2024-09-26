@@ -1,7 +1,7 @@
-var main=document.querySelector("#main");
-var crsr=document.querySelector(".cursor");
+var elem1=document.querySelector("#elem1");
+var elemImage=document.querySelector("#elem1 img");
 
-main.addEventListener("mousemove",function(dets){
-    crsr.style.left=dets.x+"px";
-    crsr.style.top=dets.y+"px";
+elem1.addEventListener("mousemove",function(dets){
+       elemImage.style.left=dets.x+"px";
+       elemImage.style.top=dets.y+"px";
 });
